@@ -7,6 +7,7 @@ Open a terminal and, using SSH, log in as saanikac@derecho.hpc.ucar.edu
 - Create a new training PBS file using vim script.pbs
 - Use i to edit the .pbs file
 - Write the following code:
+'''
 #!/bin/bash
 #PBS -N test
 #PBS -l select=1:ncpus=1:mem=4GB
@@ -17,6 +18,7 @@ Open a terminal and, using SSH, log in as saanikac@derecho.hpc.ucar.edu
 
 module load conda
 python script.py
+'''
 
 - Press esc, save the .pbs file with ":wq".
 - Submit the file using qsub script.pbs
